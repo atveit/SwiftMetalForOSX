@@ -13,6 +13,12 @@
 		673404051B28427E0086EBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673404031B28427E0086EBBA /* Main.storyboard */; };
 		673404101B28427E0086EBBA /* SwiftMetalForOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734040F1B28427E0086EBBA /* SwiftMetalForOSXTests.swift */; };
 		6734041B1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734041A1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift */; };
+		6734042C1B2843560086EBBA /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042A1B2843560086EBBA /* Quartz.framework */; };
+		6734042D1B2843560086EBBA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042B1B2843560086EBBA /* QuartzCore.framework */; };
+		673404301B28435D0086EBBA /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042E1B28435D0086EBBA /* Metal.framework */; };
+		673404311B28435D0086EBBA /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042F1B28435D0086EBBA /* MetalKit.framework */; };
+		673404331B2843DF0086EBBA /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673404321B2843DF0086EBBA /* MetalViewController.swift */; };
+		673404351B28442D0086EBBA /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 673404341B28442D0086EBBA /* Shaders.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		673404161B28427E0086EBBA /* SwiftMetalForOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMetalForOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6734041A1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMetalForOSXUITests.swift; sourceTree = "<group>"; };
 		6734041C1B28427E0086EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6734042A1B2843560086EBBA /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		6734042B1B2843560086EBBA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6734042E1B28435D0086EBBA /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		6734042F1B28435D0086EBBA /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		673404321B2843DF0086EBBA /* MetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		673404341B28442D0086EBBA /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673404301B28435D0086EBBA /* Metal.framework in Frameworks */,
+				673404311B28435D0086EBBA /* MetalKit.framework in Frameworks */,
+				6734042C1B2843560086EBBA /* Quartz.framework in Frameworks */,
+				6734042D1B2843560086EBBA /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +91,10 @@
 		673403F11B28427E0086EBBA = {
 			isa = PBXGroup;
 			children = (
+				6734042E1B28435D0086EBBA /* Metal.framework */,
+				6734042F1B28435D0086EBBA /* MetalKit.framework */,
+				6734042A1B2843560086EBBA /* Quartz.framework */,
+				6734042B1B2843560086EBBA /* QuartzCore.framework */,
 				673403FC1B28427E0086EBBA /* SwiftMetalForOSX */,
 				6734040E1B28427E0086EBBA /* SwiftMetalForOSXTests */,
 				673404191B28427E0086EBBA /* SwiftMetalForOSXUITests */,
@@ -100,6 +120,8 @@
 				673404011B28427E0086EBBA /* Assets.xcassets */,
 				673404031B28427E0086EBBA /* Main.storyboard */,
 				673404061B28427E0086EBBA /* Info.plist */,
+				673404321B2843DF0086EBBA /* MetalViewController.swift */,
+				673404341B28442D0086EBBA /* Shaders.metal */,
 			);
 			path = SwiftMetalForOSX;
 			sourceTree = "<group>";
@@ -251,8 +273,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				673404351B28442D0086EBBA /* Shaders.metal in Sources */,
 				673404001B28427E0086EBBA /* ViewController.swift in Sources */,
 				673403FE1B28427E0086EBBA /* AppDelegate.swift in Sources */,
+				673404331B2843DF0086EBBA /* MetalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +498,7 @@
 				673404211B28427E0086EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		673404221B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSXTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +507,7 @@
 				673404241B28427E0086EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		673404251B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSXUITests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +516,7 @@
 				673404271B28427E0086EBBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
