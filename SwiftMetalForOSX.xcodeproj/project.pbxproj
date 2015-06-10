@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		673403FE1B28427E0086EBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673403FD1B28427E0086EBBA /* AppDelegate.swift */; };
+		673404001B28427E0086EBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673403FF1B28427E0086EBBA /* ViewController.swift */; };
+		673404021B28427E0086EBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673404011B28427E0086EBBA /* Assets.xcassets */; };
+		673404051B28427E0086EBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673404031B28427E0086EBBA /* Main.storyboard */; };
+		673404101B28427E0086EBBA /* SwiftMetalForOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734040F1B28427E0086EBBA /* SwiftMetalForOSXTests.swift */; };
+		6734041B1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734041A1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6734040C1B28427E0086EBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 673403F21B28427E0086EBBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 673403F91B28427E0086EBBA;
+			remoteInfo = SwiftMetalForOSX;
+		};
+		673404171B28427E0086EBBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 673403F21B28427E0086EBBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 673403F91B28427E0086EBBA;
+			remoteInfo = SwiftMetalForOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		673403FA1B28427E0086EBBA /* SwiftMetalForOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMetalForOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		673403FD1B28427E0086EBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		673403FF1B28427E0086EBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		673404011B28427E0086EBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		673404041B28427E0086EBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		673404061B28427E0086EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6734040B1B28427E0086EBBA /* SwiftMetalForOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMetalForOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6734040F1B28427E0086EBBA /* SwiftMetalForOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMetalForOSXTests.swift; sourceTree = "<group>"; };
+		673404111B28427E0086EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		673404161B28427E0086EBBA /* SwiftMetalForOSXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMetalForOSXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6734041A1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMetalForOSXUITests.swift; sourceTree = "<group>"; };
+		6734041C1B28427E0086EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		673403F71B28427E0086EBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673404081B28427E0086EBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673404131B28427E0086EBBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		673403F11B28427E0086EBBA = {
+			isa = PBXGroup;
+			children = (
+				673403FC1B28427E0086EBBA /* SwiftMetalForOSX */,
+				6734040E1B28427E0086EBBA /* SwiftMetalForOSXTests */,
+				673404191B28427E0086EBBA /* SwiftMetalForOSXUITests */,
+				673403FB1B28427E0086EBBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		673403FB1B28427E0086EBBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				673403FA1B28427E0086EBBA /* SwiftMetalForOSX.app */,
+				6734040B1B28427E0086EBBA /* SwiftMetalForOSXTests.xctest */,
+				673404161B28427E0086EBBA /* SwiftMetalForOSXUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		673403FC1B28427E0086EBBA /* SwiftMetalForOSX */ = {
+			isa = PBXGroup;
+			children = (
+				673403FD1B28427E0086EBBA /* AppDelegate.swift */,
+				673403FF1B28427E0086EBBA /* ViewController.swift */,
+				673404011B28427E0086EBBA /* Assets.xcassets */,
+				673404031B28427E0086EBBA /* Main.storyboard */,
+				673404061B28427E0086EBBA /* Info.plist */,
+			);
+			path = SwiftMetalForOSX;
+			sourceTree = "<group>";
+		};
+		6734040E1B28427E0086EBBA /* SwiftMetalForOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				6734040F1B28427E0086EBBA /* SwiftMetalForOSXTests.swift */,
+				673404111B28427E0086EBBA /* Info.plist */,
+			);
+			path = SwiftMetalForOSXTests;
+			sourceTree = "<group>";
+		};
+		673404191B28427E0086EBBA /* SwiftMetalForOSXUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6734041A1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift */,
+				6734041C1B28427E0086EBBA /* Info.plist */,
+			);
+			path = SwiftMetalForOSXUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		673403F91B28427E0086EBBA /* SwiftMetalForOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6734041F1B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSX" */;
+			buildPhases = (
+				673403F61B28427E0086EBBA /* Sources */,
+				673403F71B28427E0086EBBA /* Frameworks */,
+				673403F81B28427E0086EBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMetalForOSX;
+			productName = SwiftMetalForOSX;
+			productReference = 673403FA1B28427E0086EBBA /* SwiftMetalForOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6734040A1B28427E0086EBBA /* SwiftMetalForOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673404221B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSXTests" */;
+			buildPhases = (
+				673404071B28427E0086EBBA /* Sources */,
+				673404081B28427E0086EBBA /* Frameworks */,
+				673404091B28427E0086EBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6734040D1B28427E0086EBBA /* PBXTargetDependency */,
+			);
+			name = SwiftMetalForOSXTests;
+			productName = SwiftMetalForOSXTests;
+			productReference = 6734040B1B28427E0086EBBA /* SwiftMetalForOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		673404151B28427E0086EBBA /* SwiftMetalForOSXUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 673404251B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSXUITests" */;
+			buildPhases = (
+				673404121B28427E0086EBBA /* Sources */,
+				673404131B28427E0086EBBA /* Frameworks */,
+				673404141B28427E0086EBBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				673404181B28427E0086EBBA /* PBXTargetDependency */,
+			);
+			name = SwiftMetalForOSXUITests;
+			productName = SwiftMetalForOSXUITests;
+			productReference = 673404161B28427E0086EBBA /* SwiftMetalForOSXUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		673403F21B28427E0086EBBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Amund Tveit";
+				TargetAttributes = {
+					673403F91B28427E0086EBBA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					6734040A1B28427E0086EBBA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 673403F91B28427E0086EBBA;
+					};
+					673404151B28427E0086EBBA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 673403F91B28427E0086EBBA;
+					};
+				};
+			};
+			buildConfigurationList = 673403F51B28427E0086EBBA /* Build configuration list for PBXProject "SwiftMetalForOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 673403F11B28427E0086EBBA;
+			productRefGroup = 673403FB1B28427E0086EBBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				673403F91B28427E0086EBBA /* SwiftMetalForOSX */,
+				6734040A1B28427E0086EBBA /* SwiftMetalForOSXTests */,
+				673404151B28427E0086EBBA /* SwiftMetalForOSXUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		673403F81B28427E0086EBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673404021B28427E0086EBBA /* Assets.xcassets in Resources */,
+				673404051B28427E0086EBBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673404091B28427E0086EBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673404141B28427E0086EBBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		673403F61B28427E0086EBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673404001B28427E0086EBBA /* ViewController.swift in Sources */,
+				673403FE1B28427E0086EBBA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673404071B28427E0086EBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				673404101B28427E0086EBBA /* SwiftMetalForOSXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		673404121B28427E0086EBBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6734041B1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6734040D1B28427E0086EBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 673403F91B28427E0086EBBA /* SwiftMetalForOSX */;
+			targetProxy = 6734040C1B28427E0086EBBA /* PBXContainerItemProxy */;
+		};
+		673404181B28427E0086EBBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 673403F91B28427E0086EBBA /* SwiftMetalForOSX */;
+			targetProxy = 673404171B28427E0086EBBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		673404031B28427E0086EBBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				673404041B28427E0086EBBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6734041D1B28427E0086EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6734041E1B28427E0086EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		673404201B28427E0086EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftMetalForOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amundtveit.SwiftMetalForOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		673404211B28427E0086EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftMetalForOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amundtveit.SwiftMetalForOSX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		673404231B28427E0086EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftMetalForOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amundtveit.SwiftMetalForOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftMetalForOSX.app/Contents/MacOS/SwiftMetalForOSX";
+			};
+			name = Debug;
+		};
+		673404241B28427E0086EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftMetalForOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amundtveit.SwiftMetalForOSXTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftMetalForOSX.app/Contents/MacOS/SwiftMetalForOSX";
+			};
+			name = Release;
+		};
+		673404261B28427E0086EBBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftMetalForOSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amundtveit.SwiftMetalForOSXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftMetalForOSX;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		673404271B28427E0086EBBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftMetalForOSXUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amundtveit.SwiftMetalForOSXUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftMetalForOSX;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		673403F51B28427E0086EBBA /* Build configuration list for PBXProject "SwiftMetalForOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6734041D1B28427E0086EBBA /* Debug */,
+				6734041E1B28427E0086EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6734041F1B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673404201B28427E0086EBBA /* Debug */,
+				673404211B28427E0086EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		673404221B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673404231B28427E0086EBBA /* Debug */,
+				673404241B28427E0086EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		673404251B28427E0086EBBA /* Build configuration list for PBXNativeTarget "SwiftMetalForOSXUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				673404261B28427E0086EBBA /* Debug */,
+				673404271B28427E0086EBBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 673403F21B28427E0086EBBA /* Project object */;
+}
