@@ -10,18 +10,27 @@ import Cocoa
 import Metal
 
 @available(OSX 10.11, *)
+
 class ViewController: MetalViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupMetal()
-        let (_, computePipelineState, _) = setupShaderInMetalPipeline("doubler")
         
         // Create input and output vectors, and corresponding metal buffer
         let N = 100
         let inputVector = createInputVector(N)
+        var outputVector = doublerWithMetal(inputVector)
+        print("input = \(inputVector)")
+        print("output = \(outputVector)")
+        exit(0)
+    }
+    
+    func doublerWithMetal(inputVector:[Float]) -> [Float] {
+        // uses metal to calculate double array
+        setupMetal()
+        let (_, computePipelineState, _) = setupShaderInMetalPipeline("doubler")
         let inputMetalBuffer = createMetalBuffer(inputVector)
-        var outputVector = [Float](count: N, repeatedValue: 0.0)
+        var outputVector = [Float](count: inputVector.count, repeatedValue: 0.0)
         let outputMetalBuffer = createMetalBuffer(outputVector)
         
         // Create Metal Compute Command Encoder and add input and output buffers to it
@@ -56,10 +65,8 @@ class ViewController: MetalViewController {
             length: outputVector.count*sizeof(Float), freeWhenDone: false)
         data.getBytes(&outputVector, length:inputVector.count * sizeof(Float))
         
-        print("inputVector = \(inputVector)")
-        print("outputVector = \(outputVector)")
+        return outputVector
         
-        exit(0)
     }
     
     

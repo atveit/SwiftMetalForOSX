@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="15A178w" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="FKO-JN-7xu">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8121.17"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="12P-Si-WEm">
+            <objects>
+                <viewController identifier="VIEWC" storyboardIdentifier="VIEWC" id="FKO-JN-7xu" customClass="ViewController" customModule="SwiftMetalForOSX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="M49-o5-cB5">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="PAy-Fa-p7W">
+                                <rect key="frame" x="166" y="139" width="96" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="T5r-Q3-O9O"/>
+                                </constraints>
+                                <animations/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="0Pj-5N-CGQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PAy-Fa-p7W" firstAttribute="leading" secondItem="M49-o5-cB5" secondAttribute="leading" constant="166" id="OQs-gL-Eez"/>
+                            <constraint firstItem="PAy-Fa-p7W" firstAttribute="centerY" secondItem="M49-o5-cB5" secondAttribute="centerY" id="lTc-yu-NJW"/>
+                        </constraints>
+                        <animations/>
+                    </view>
+                </viewController>
+                <customObject id="Gss-bB-IEq" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="271"/>
+        </scene>
+    </scenes>
+</document>

@@ -51,7 +51,9 @@ class MetalViewController : NSViewController {
             var computePipelineErrors = NSErrorPointer()
             var computePipelineState:MTLComputePipelineState? = nil
             do {
-                computePipelineState = try metalDevice.newComputePipelineStateWithDescriptor(computePipeLineDescriptor)
+
+//                computePipelineState = try metalDevice.newComputePipelineStateWithDescriptor(computePipeLineDescriptor)
+                    computePipelineState = try metalDevice.newComputePipelineStateWithFunction(shader!)
             } catch {
                 print("catching..")
             }

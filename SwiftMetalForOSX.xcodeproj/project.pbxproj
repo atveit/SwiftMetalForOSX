@@ -7,18 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		672199741B28537200345D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672199731B28537200345D90 /* ViewController.swift */; };
+		672199751B28537200345D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672199731B28537200345D90 /* ViewController.swift */; };
+		672199761B28537200345D90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672199731B28537200345D90 /* ViewController.swift */; };
+		6721997C1B28540300345D90 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721997B1B28540300345D90 /* MetalViewController.swift */; };
+		6721997D1B28540300345D90 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721997B1B28540300345D90 /* MetalViewController.swift */; };
+		6721997E1B28540300345D90 /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721997B1B28540300345D90 /* MetalViewController.swift */; };
+		672199841B28542800345D90 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 672199831B28542800345D90 /* Shaders.metal */; };
+		672199851B28542800345D90 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 672199831B28542800345D90 /* Shaders.metal */; };
+		672199861B28542800345D90 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 672199831B28542800345D90 /* Shaders.metal */; };
+		672199881B28566B00345D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672199871B28566B00345D90 /* Main.storyboard */; };
+		672199891B28566B00345D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672199871B28566B00345D90 /* Main.storyboard */; };
+		6721998A1B28566B00345D90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672199871B28566B00345D90 /* Main.storyboard */; };
 		673403FE1B28427E0086EBBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673403FD1B28427E0086EBBA /* AppDelegate.swift */; };
-		673404001B28427E0086EBBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673403FF1B28427E0086EBBA /* ViewController.swift */; };
 		673404021B28427E0086EBBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673404011B28427E0086EBBA /* Assets.xcassets */; };
-		673404051B28427E0086EBBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 673404031B28427E0086EBBA /* Main.storyboard */; };
 		673404101B28427E0086EBBA /* SwiftMetalForOSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734040F1B28427E0086EBBA /* SwiftMetalForOSXTests.swift */; };
 		6734041B1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6734041A1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift */; };
 		6734042C1B2843560086EBBA /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042A1B2843560086EBBA /* Quartz.framework */; };
 		6734042D1B2843560086EBBA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042B1B2843560086EBBA /* QuartzCore.framework */; };
 		673404301B28435D0086EBBA /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042E1B28435D0086EBBA /* Metal.framework */; };
 		673404311B28435D0086EBBA /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6734042F1B28435D0086EBBA /* MetalKit.framework */; };
-		673404331B2843DF0086EBBA /* MetalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673404321B2843DF0086EBBA /* MetalViewController.swift */; };
-		673404351B28442D0086EBBA /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 673404341B28442D0086EBBA /* Shaders.metal */; };
+		67A0D5E71B2876DE0071F387 /* Testulf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0D5E61B2876DE0071F387 /* Testulf.swift */; };
+		67A0D5F11B29A3290071F387 /* collection_30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5E81B29A3290071F387 /* collection_30x30.png */; };
+		67A0D5F21B29A3290071F387 /* collection_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5E91B29A3290071F387 /* collection_60x60.png */; };
+		67A0D5F31B29A3290071F387 /* table_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5EA1B29A3290071F387 /* table_90x90.png */; };
+		67A0D5F41B29A3290071F387 /* table_30x30.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5EB1B29A3290071F387 /* table_30x30.png */; };
+		67A0D5F51B29A3290071F387 /* table_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5EC1B29A3290071F387 /* table_60x60.png */; };
+		67A0D5F61B29A3290071F387 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5ED1B29A3290071F387 /* LaunchImage.png */; };
+		67A0D5F71B29A3290071F387 /* collection_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5EE1B29A3290071F387 /* collection_90x90.png */; };
+		67A0D5F81B29A3290071F387 /* MemeGenerator_120 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5EF1B29A3290071F387 /* MemeGenerator_120 copy.png */; };
+		67A0D5F91B29A3290071F387 /* MemeGenerator_180 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 67A0D5F01B29A3290071F387 /* MemeGenerator_180 copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		672199731B28537200345D90 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6721997B1B28540300345D90 /* MetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
+		672199831B28542800345D90 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		672199871B28566B00345D90 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		673403FA1B28427E0086EBBA /* SwiftMetalForOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMetalForOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673403FD1B28427E0086EBBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		673403FF1B28427E0086EBBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		673404011B28427E0086EBBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		673404041B28427E0086EBBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		673404061B28427E0086EBBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6734040B1B28427E0086EBBA /* SwiftMetalForOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMetalForOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6734040F1B28427E0086EBBA /* SwiftMetalForOSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMetalForOSXTests.swift; sourceTree = "<group>"; };
@@ -55,8 +75,16 @@
 		6734042B1B2843560086EBBA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6734042E1B28435D0086EBBA /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		6734042F1B28435D0086EBBA /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		673404321B2843DF0086EBBA /* MetalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalViewController.swift; sourceTree = "<group>"; };
-		673404341B28442D0086EBBA /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		67A0D5E61B2876DE0071F387 /* Testulf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Testulf.swift; path = SwiftMetalForOSXUITests/Testulf.swift; sourceTree = "<group>"; };
+		67A0D5E81B29A3290071F387 /* collection_30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_30x30.png; sourceTree = "<group>"; };
+		67A0D5E91B29A3290071F387 /* collection_60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_60x60.png; sourceTree = "<group>"; };
+		67A0D5EA1B29A3290071F387 /* table_90x90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_90x90.png; sourceTree = "<group>"; };
+		67A0D5EB1B29A3290071F387 /* table_30x30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_30x30.png; sourceTree = "<group>"; };
+		67A0D5EC1B29A3290071F387 /* table_60x60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table_60x60.png; sourceTree = "<group>"; };
+		67A0D5ED1B29A3290071F387 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		67A0D5EE1B29A3290071F387 /* collection_90x90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collection_90x90.png; sourceTree = "<group>"; };
+		67A0D5EF1B29A3290071F387 /* MemeGenerator_120 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MemeGenerator_120 copy.png"; sourceTree = "<group>"; };
+		67A0D5F01B29A3290071F387 /* MemeGenerator_180 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MemeGenerator_180 copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +119,7 @@
 		673403F11B28427E0086EBBA = {
 			isa = PBXGroup;
 			children = (
+				67A0D5E61B2876DE0071F387 /* Testulf.swift */,
 				6734042E1B28435D0086EBBA /* Metal.framework */,
 				6734042F1B28435D0086EBBA /* MetalKit.framework */,
 				6734042A1B2843560086EBBA /* Quartz.framework */,
@@ -116,12 +145,21 @@
 			isa = PBXGroup;
 			children = (
 				673403FD1B28427E0086EBBA /* AppDelegate.swift */,
-				673403FF1B28427E0086EBBA /* ViewController.swift */,
 				673404011B28427E0086EBBA /* Assets.xcassets */,
-				673404031B28427E0086EBBA /* Main.storyboard */,
+				67A0D5E81B29A3290071F387 /* collection_30x30.png */,
+				67A0D5E91B29A3290071F387 /* collection_60x60.png */,
+				67A0D5EA1B29A3290071F387 /* table_90x90.png */,
+				67A0D5EB1B29A3290071F387 /* table_30x30.png */,
+				67A0D5EC1B29A3290071F387 /* table_60x60.png */,
+				67A0D5ED1B29A3290071F387 /* LaunchImage.png */,
+				67A0D5EE1B29A3290071F387 /* collection_90x90.png */,
+				67A0D5EF1B29A3290071F387 /* MemeGenerator_120 copy.png */,
+				67A0D5F01B29A3290071F387 /* MemeGenerator_180 copy.png */,
 				673404061B28427E0086EBBA /* Info.plist */,
-				673404321B2843DF0086EBBA /* MetalViewController.swift */,
-				673404341B28442D0086EBBA /* Shaders.metal */,
+				672199731B28537200345D90 /* ViewController.swift */,
+				6721997B1B28540300345D90 /* MetalViewController.swift */,
+				672199831B28542800345D90 /* Shaders.metal */,
+				672199871B28566B00345D90 /* Main.storyboard */,
 			);
 			path = SwiftMetalForOSX;
 			sourceTree = "<group>";
@@ -247,8 +285,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A0D5F61B29A3290071F387 /* LaunchImage.png in Resources */,
+				67A0D5F81B29A3290071F387 /* MemeGenerator_120 copy.png in Resources */,
 				673404021B28427E0086EBBA /* Assets.xcassets in Resources */,
-				673404051B28427E0086EBBA /* Main.storyboard in Resources */,
+				67A0D5F11B29A3290071F387 /* collection_30x30.png in Resources */,
+				67A0D5F21B29A3290071F387 /* collection_60x60.png in Resources */,
+				67A0D5F91B29A3290071F387 /* MemeGenerator_180 copy.png in Resources */,
+				67A0D5F51B29A3290071F387 /* table_60x60.png in Resources */,
+				672199881B28566B00345D90 /* Main.storyboard in Resources */,
+				67A0D5F71B29A3290071F387 /* collection_90x90.png in Resources */,
+				67A0D5F31B29A3290071F387 /* table_90x90.png in Resources */,
+				67A0D5F41B29A3290071F387 /* table_30x30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672199891B28566B00345D90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6721998A1B28566B00345D90 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +322,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				673404351B28442D0086EBBA /* Shaders.metal in Sources */,
-				673404001B28427E0086EBBA /* ViewController.swift in Sources */,
+				672199841B28542800345D90 /* Shaders.metal in Sources */,
 				673403FE1B28427E0086EBBA /* AppDelegate.swift in Sources */,
-				673404331B2843DF0086EBBA /* MetalViewController.swift in Sources */,
+				6721997C1B28540300345D90 /* MetalViewController.swift in Sources */,
+				672199741B28537200345D90 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +333,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672199851B28542800345D90 /* Shaders.metal in Sources */,
+				672199751B28537200345D90 /* ViewController.swift in Sources */,
 				673404101B28427E0086EBBA /* SwiftMetalForOSXTests.swift in Sources */,
+				6721997D1B28540300345D90 /* MetalViewController.swift in Sources */,
+				67A0D5E71B2876DE0071F387 /* Testulf.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672199861B28542800345D90 /* Shaders.metal in Sources */,
+				672199761B28537200345D90 /* ViewController.swift in Sources */,
 				6734041B1B28427E0086EBBA /* SwiftMetalForOSXUITests.swift in Sources */,
+				6721997E1B28540300345D90 /* MetalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,17 +366,6 @@
 			targetProxy = 673404171B28427E0086EBBA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		673404031B28427E0086EBBA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				673404041B28427E0086EBBA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6734041D1B28427E0086EBBA /* Debug */ = {
