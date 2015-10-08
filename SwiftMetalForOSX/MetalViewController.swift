@@ -12,6 +12,26 @@ import Metal
 import MetalKit
 import QuartzCore
 
+struct Vector16 // matches float4x4 in Metal
+{
+    var x0: Float = 0.0
+    var x1: Float = 0.0
+    var x2: Float = 0.0
+    var x3: Float = 0.0
+    var x4: Float = 0.0
+    var x5: Float = 0.0
+    var x6: Float = 0.0
+    var x7: Float = 0.0
+    var x8: Float = 0.0
+    var x9: Float = 0.0
+    var x10: Float = 0.0
+    var x11: Float = 0.0
+    var x12: Float = 0.0
+    var x13: Float = 0.0
+    var x14: Float = 0.0
+    var x15: Float = 0.0
+}
+
 struct Vector4 // matches float4 in Metal
 {
     var x: Float = 0.0
@@ -83,6 +103,17 @@ class MetalViewController : NSViewController {
     func createFloatNumbersArray(count: Int) -> [Float] {
         return [Float](count: count, repeatedValue: 0.0)
     }
+    
+    func createVector16Array(count: Int) -> [Vector16] {
+        let zeroVector16 = Vector16()
+        return [Vector16](count: count, repeatedValue: zeroVector16)
+    }
+    
+    func createVector16MetalBuffer(var vector: [Vector16], let metalDevice:MTLDevice) -> MTLBuffer {
+        let byteLength = vector.count*sizeof(Vector16)
+        return metalDevice.newBufferWithBytes(&vector, length: byteLength, options: MTLResourceOptions.CPUCacheModeDefaultCache)
+    }
+
     
     func createVector4Array(count: Int) -> [Vector4] {
         let zeroVector4 = Vector4()

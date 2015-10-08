@@ -37,7 +37,7 @@ kernel void multvfloat4(const device float4 *in1 [[ buffer(0) ]],
     out[id] = in1[id]*in2[id];
 }
 
-kernel void multvfloat4x4(const device float4x4 *in1 [[ buffer(0) ]],
+kernel void multvfloat16(const device float4x4 *in1 [[ buffer(0) ]],
                         const device float4x4 *in2 [[ buffer(1) ]],
                         device float4x4 *out [[ buffer(2) ]],
                         uint id [[ thread_position_in_grid ]]) {

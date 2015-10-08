@@ -20,9 +20,9 @@ class ViewController: MetalViewController {
         
         // Create input and output vectors, and corresponding metal buffer
         let N = 32000000
-        let in1 = createInputVector(N)
+        //let in1 = createInputVector(N)
         //let in2 = createInputVector(N)
-        let out1 = multWithMetal(in1, in2: in1)
+        //let out1 = multWithMetal(in1, in2: in1)
         //print("input = \(inputVector)")
         //print("output = \(outputVector)")
         
@@ -37,9 +37,14 @@ class ViewController: MetalViewController {
         //let in2f4 = createVector4Array(K)
         //let out4 = multWithMetalF4(in1f4, in2: in1f4)
         
+
+        let L = N/16
+        let in1f16 = createVector16Array(L)
+//        let in2f16 = createVector4x4Array(L)
+        let out16 = multWithMetalF16(in1f16, in2: in1f16)
+        
         print("Time to run entire job: \(NSDate().timeIntervalSinceDate(start))")
 
-        
         exit(0)
     }
     
@@ -91,6 +96,60 @@ class ViewController: MetalViewController {
         return outputVector
         
     }
+    
+    func multWithMetalF16(in1:[Vector16], in2:[Vector16]) -> [Vector16] {
+        print("multWithMetal Float16")
+        // uses metal to calculate double array
+        setupMetal()
+        let (_, computePipelineState, _) = setupShaderInMetalPipeline("multvfloat16")
+        let in1Metal = createVector16MetalBuffer(in1, metalDevice: metalDevice)
+        let in2Metal = createVector16MetalBuffer(in2, metalDevice: metalDevice)
+        var outputVector = createVector16Array(in1.count)
+        let outputMetalBuffer = createVector16MetalBuffer(outputVector, metalDevice: metalDevice)
+        
+        // Create Metal Compute Command Encoder and add input and output buffers to it
+        metalComputeCommandEncoder = metalCommandBuffer.computeCommandEncoder()
+        metalComputeCommandEncoder.setBuffer(in1Metal, offset: 0, atIndex: 0)
+        metalComputeCommandEncoder.setBuffer(in2Metal, offset: 0, atIndex: 1)
+        metalComputeCommandEncoder.setBuffer(outputMetalBuffer, offset: 0, atIndex: 2)
+        
+        // Set the shader function that Metal will use
+        metalComputeCommandEncoder.setComputePipelineState(computePipelineState)
+        
+        // Find max number of parallel GPU threads (threadExecutionWidth) in computePipelineState
+        let threadExecutionWidth = computePipelineState.threadExecutionWidth
+        
+        // Set up thread groups on GPU
+        let threadsPerGroup = MTLSize(width:threadExecutionWidth,height:1,depth:1)
+        let numThreadgroups = MTLSize(width:(in1.count)/threadExecutionWidth, height:1, depth:1)
+        metalComputeCommandEncoder.dispatchThreadgroups(numThreadgroups, threadsPerThreadgroup: threadsPerGroup)
+        
+        // Finalize configuration
+        metalComputeCommandEncoder.endEncoding()
+        
+        print("outputVector before job is running: \(outputVector.count)")
+        
+        // Start job
+        metalCommandBuffer.enqueue()
+        
+        var start = NSDate()
+        metalCommandBuffer.commit()
+        
+        // Wait for it to finish
+        metalCommandBuffer.waitUntilCompleted()
+        
+        print("Time to run network: \(NSDate().timeIntervalSinceDate(start))")
+        
+        
+        // Get output data from Metal/GPU into Swift
+        let data = NSData(bytesNoCopy: outputMetalBuffer.contents(),
+            length: outputVector.count*sizeof(Vector16), freeWhenDone: false)
+        data.getBytes(&outputVector, length:in1.count * sizeof(Vector2))
+        
+        return outputVector
+        
+    }
+
     
     func multWithMetalF2(in1:[Vector2], in2:[Vector2]) -> [Vector2] {
         print("multWithMetal Float2")
